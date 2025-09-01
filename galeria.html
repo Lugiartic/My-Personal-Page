@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="galeria.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de arte de Milky</title>
+</head>
+<body>
+    <section id="introduccion-galeria">
+        <div class="selector-idioma">
+            <button id="boton-idioma" type="button">
+                <img src="img/lenguaje/es_flag.png" alt="Español" width="40px"> ▼
+            </button>
+            <ul id="menu-idioma" class="oculto">
+                <li onclick="cambiarIdioma('es')">
+                    <img src="img/lenguaje/es_flag.png" alt="Español" width="40px"> Español
+                </li>
+                <li onclick="cambiarIdioma('en')"> 
+                    <img src="img/lenguaje/en_flag.png" alt="English" width="40px"> English
+                </li>
+            </ul>
+            </div>
+        <header>
+            <h1 id="tituloGaleria">Galeria de arte de Milky</h1>
+        </header>
+        <p style="font-size: larger;" id="galeriaIntroduccion">En este lugar voy a publicar todos mis dibujos, desde el mas reciente hasta el mas antiguo. Toca cada tarjeta para ir a al tweet donde se ha publicado el dibujo, un "me gusta" ayuda mucho y me motiva a seguir incursionando este camino :) <br><br>ADVERTENCIA: Hay spoilers de Rain World!!!</p>
+    </section>
+    <main>
+        <section class="galeria-grid">
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1960016333782806940" target="_blank">
+                    <img src="img/drawings/Spearmaster holding spear.png" alt="Spearmaster sosteniendo lanzas">
+                    <p id="d1">Spearmaster agarrando lanzas</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1949851471178010743" target="_blank">
+                    <img src="img/drawings/Artificer on spear.png" alt="Artificer on spear">
+                    <p id="d2">Artificer en un poste</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1946971894650949675" target="_blank">
+                    <img src="img/drawings/Watcher loves u.png" alt="Love Watcher">
+                    <p>The Watcher loves u :3</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1946209646047367640" target="_blank">
+                    <img src="img/drawings/riva eating.png" alt="Rivulet eating">
+                    <p id="d3">Rivulet comiendo fruta</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1943689520232227086" target="_blank">
+                    <img src="img/drawings/Nyx.png" alt="Nyx">
+                    <p id="d4">Nyx (Regalo para una amiga)</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1943665758224957911" target="_blank">
+                    <img src="img/drawings/watcher through signal spires.png" alt="Watcher through signal spires">
+                    <p id="d5">The Watcher a traves de Signal Spires</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1930988876836790748" target="_blank">
+                    <img src="img/drawings/watcher walking.png" alt="Watcher walking">
+                    <p id="d6">The Watcher caminando</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1923391784450765084" target="_blank">
+                    <img src="img/drawings/watcher karma.png" alt="Watcher karma">
+                    <p id="d7">The Watcher con karma maximo</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1909600173308641353" target="_blank">
+                    <img src="img/drawings/the watcher floating.png" alt="The watcher floating">
+                    <p id="d8">The Watcher flotando</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1900181862284239248" target="_blank">
+                    <img src="img/drawings/gourmand.png" alt="Gourmand">
+                    <p id="d9">Gloton, RW Art Month 2025</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1896631493101076595" target="_blank">
+                    <img src="img/drawings/noodlefly.png" alt="Noodlefly">
+                    <p>Noodlefly, RW Art Month 2025</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <div class="carrusel">
+                    <div class="imagenes">
+                        <img src="img/drawings/survivor.png" alt="Survivor - var1">
+                        <img src="img/drawings/monk.png" alt="Monk - var2">
+                        <img src="img/drawings/hunter.png" alt="Hunter - var3">
+                        <img src="img/drawings/gourmand_b.png" alt="Gourmand - var4">
+                        <img src="img/drawings/artificer.png" alt="Artificer - var5">
+                        <img src="img/drawings/rivulet.png" alt="Rivulet - var6">
+                        <img src="img/drawings/spearmaster.png" alt="Spearmaster - var7">
+                        <img src="img/drawings/saint.png" alt="Saint - var8">
+                    </div>
+                    <button class="prev">←</button>
+                    <button class="next">→</button>
+                    <p id="d10">Slugcats base + downpour (enlace a twitter <a href="https://x.com/Milky_bat/status/1887514464724898022" target="_blank">en este texto</a>)</p>
+                </div>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1872147162391539932" target="_blank">
+                    <img src="img/drawings/derpo.png" alt="Derpy">
+                    <p id="d11">Derpy (regalo para un amigo)</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1869751161512972701" target="_blank">
+                    <img src="img/drawings/spear-hoopmaster.png" alt="hoopmaster">
+                    <p id="d12">Spearmaster con aros</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1864668210391294159" target="_blank">
+                    <img src="img/drawings/Wanderer.png" alt="The Wanderer">
+                    <p>The Wanderer, slugcat mod</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1862673689575121314" target="_blank">
+                    <img src="img/drawings/spearmaster pray the sun.png" alt="Spearmaster praying the sun">
+                    <p id="d13">Spearmaster alzando los brazos</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1857841386319462708" target="_blank">
+                    <img src="img/drawings/artihunter.png" alt="Artihunter">
+                    <p>ArtiHunter</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1851038457650626732" target="_blank">
+                    <img src="img/drawings/Spearmaster is my favourite character.png" alt="Spearmaster my beloved">
+                    <p id="d14">El Spearmaster es mi personaje favorito</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1842587001138389482" target="_blank">
+                    <img src="img/drawings/spearmaster on poles.png" alt="Spearmaster on poles">
+                    <p id="d15">Spearmaster en los postes</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1838207895122362538" target="_blank">
+                    <img src="img/drawings/the watcher in trailer.png" alt="The watcher in trailer">
+                    <p id="d16">The Watcher, hecho antes de su salida</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1836517019820397047" target="_blank">
+                    <img src="img/drawings/spearmaster again.png" alt="Spearmaster (again)">
+                    <p>Spearmaster</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1833154268414587295" target="_blank">
+                    <img src="img/drawings/monk giant fruit.png" alt="Monk with a giant fruit">
+                    <p id="d17">Monk con una fruta gigante</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1828812442614284732" target="_blank">
+                    <img src="img/drawings/monk grabbing a fruit.png" alt="Monk grabbing a fruit">
+                    <p id="d18">Monk agarrando una fruta</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1826613996843401305" target="_blank">
+                    <img src="img/drawings/DeathFreeMedallion.png" alt="Death Free Medallion">
+                    <p id="d19">Death Free Medallion, carta del randombuff mod</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1822312244450877624" target="_blank">
+                    <img src="img/drawings/Spearmaster head.png" alt="Spearmaster head">
+                    <p id="d20">Spearmaster, el mensajero</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1811047901453332739" target="_blank">
+                    <img src="img/drawings/riva head.png" alt="Rivulet head">
+                    <p>(Alt) Rivulet</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <div class="carrusel">
+                    <div class="imagenes">
+                        <img src="img/drawings/Wallpaper surv.png" alt="Wallpaper survivor">
+                        <img src="img/drawings/Wallpaper monk.png" alt="Wallpaper monk">
+                        <img src="img/drawings/Wallpaper hunter.png" alt="Wallpaper hunter">
+                        <img src="img/drawings/Wallpaper gourdmand.png" alt="Wallpaper gourmand">
+                        <img src="img/drawings/Wallpaper arti.png" alt="Wallpaper artificer">
+                        <img src="img/drawings/Wallpaper riv.png" alt="Wallpaper rivulet">
+                        <img src="img/drawings/Wallpaper spearmaster.png" alt="Wallpapaer spearmaster">
+                        <img src="img/drawings/Wallpaper saint.png" alt="Wallpapar saint">
+                        <img src="img/drawings/Wallpaper inv.png" alt="Wallpaper inv">
+                    </div>
+                    <button class="prev">←</button>
+                    <button class="next">→</button>
+                    <p id="d21">Fondos de pantalla de los Slugcats del juego base + downpour (incluido inv) con resolucion 1366x768 <br><br><a href="https://x.com/Milky_bat/status/1798375300222554158" target="_blank">Enlace a twitter</a></p>
+                </div>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1780004396803182631" target="_blank">
+                    <img src="img/drawings/monk with flower.png" alt="Monk with flower">
+                    <p id="d22">Monk con una flor en la oreja</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1774101459145007578" target="_blank">
+                    <img src="img/drawings/watcher rw art month 24.png" alt="Watcher RWArtMonth 2024">
+                    <p>The Watcher, RW Art month 2024</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1773422851044856048" target="_blank">
+                    <img src="img/drawings/RW aniversary.png" alt="RW aniversary 2024">
+                    <p id="d23">Aniversario N°7, RW Art Month 2024</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1772370933522596085" target="_blank">
+                    <img src="img/drawings/Karma 3.png" alt="Karma 3">
+                    <p>Karma 3, RW Art Month 2024</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1771274390648328404" target="_blank">
+                    <img src="img/drawings/Lantern mouse.png" alt="Lantern mouse">
+                    <p id="d24">Raton linterna, RW Art month 2024</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1770799585956397445" target="_blank">
+                    <img src="img/drawings/hunter holding spears.png" alt="Hunter with spears">
+                    <p id="d25">Hunter con lanzas</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1767995517831651629" target="_blank">
+                    <img src="img/drawings/profile hunter.png" alt="Profile hunter">
+                    <p id="d26">Hunter de perfil</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1766117315706323392" target="_blank">
+                    <img src="img/drawings/saint (first fur test).png" alt="Saint with fur">
+                    <p>Saint, RW Art Month 2024</p>
+                </a>
+            </div>
+            <div class="dibujo-card">
+                <a href="https://x.com/Milky_bat/status/1765808240862847040" target="_blank">
+                    <img src="img/drawings/Gourmand art month 2024.png" alt="Gourd 2024">
+                    <p>Gourmand, RW Art Month 2024</p>
+                </a>
+            </div>
+            <script src="carrusel.js"></script>
+        </section>
+        <br>
+        <p id="textoIntermedio">A partir de este punto las imagenes direccionaran a un enlace de instagram</p>
+    <section class="galeria-grid">
+        <div class="dibujo-card">
+            <a href="https://www.instagram.com/p/C3g7S-DNBmz/" target="_blank">
+                <img src="img/drawings/Inv plushie.png" alt="Inv Plushie">
+                <p id="d27">Peluche de Inv</p>
+            </a>
+        </div>
+        <div class="dibujo-card">
+            <a href="https://www.instagram.com/p/C3QvlJePfyG/" target="_blank">
+                <img src="img/drawings/the mother.png" alt="Arti mother">
+                <p id="d28">Artificer, la madre</p>
+            </a>
+        </div>
+        <div class="dibujo-card">
+            <a href="https://www.instagram.com/p/C2_K6DfNYt6/" target="_blank">
+                <img src="img/drawings/inv with a spear.png" alt="Inv with spear">
+                <p id="d29">Inv con una lanza</p>
+            </a>
+        </div>
+        <div class="dibujo-card">
+            <a href="https://www.instagram.com/p/C2IZhqCuIeE/" target="_blank">
+                <img src="img/drawings/inv sitting.png" alt="Inv sitting">
+                <p id="d30">Inv sentado</p>
+            </a>
+        </div>
+        <div class="dibujo-card">
+            <a href="https://www.instagram.com/p/C18H9S-Lzpj/" target="_blank">
+                <img src="img/drawings/survivor with light.png" alt="Surivor with light">
+                <p id="d31">Survivor con una linterna</p>
+            </a>
+        </div>
+        <div class="dibujo-card">
+            <a href="https://www.instagram.com/p/C0datO_uUWI/" target="_blank">
+                <img src="img/drawings/hunter aiming.png" alt="Hunter aiming">
+                <p id="d32">Hunter apuntando</p>
+            </a>
+        </div>
+        <div class="dibujo-card">
+            <a href="https://www.instagram.com/p/C0SOGAGPMra/" target="_blank">
+                <img src="img/drawings/arti firts draw.png" alt="First arti drawing">
+                <p>Artificer</p>
+            </a>
+        </div>
+        <div class="dibujo-card">
+            <a href="https://www.instagram.com/p/C0PGJEUrJH4/?img_index=2" target="_blank">
+                <img src="img/drawings/first drawing.png" alt="Monk, first drawing">
+                <p id="d33">Monk. Primer dibujo, hecho el 29 de noviembre 2023</p>
+            </a>
+        </div>
+    </section>
+    </main>
+    <script src="idioma-galleria.js"></script>
+</body>
+</html>

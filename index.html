@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milky's site</title>
+</head>
+<body>
+    <div class="selector-idioma">
+        <button id="boton-idioma" type="button">
+            <img src="img/lenguaje/es_flag.png" alt="Español" width="40px"> ▼
+        </button>
+        <ul id="menu-idioma" class="oculto">
+            <li onclick="cambiarIdioma('es')">
+                <img src="img/lenguaje/es_flag.png" alt="Español" width="40px"> Español
+            </li>
+            <li onclick="cambiarIdioma('en')"> 
+                <img src="img/lenguaje/en_flag.png" alt="English" width="40px"> English
+            </li>
+        </ul>
+    </div>
+    <header>
+        <h1 id="tituloprincipal">Página personal de Milky</h1>
+    </header>
+    <main>
+        <!--
+        Acá irá todo el contenido de la página:
+
+        1. Presentación: Foto (Slugcat) - Quién soy - Gustos generales y mencionar pasatiempos
+        2. Gustos: Juegos favoritos (Con sus géneros)- Pokemon - Música 
+        3. Pasatiempos: Proyectos web - Galería de arte en un sitio externo
+        4. Redes sociales: Twitter/X - Youtube - Discord - Instagram
+        -->
+
+        <section id="presentación">
+            <h2 id="tituloPresentacion">Presentación</h2>
+            <div id="presentación-contenido">
+                <img src="img/pfp.jpg" alt="Profile picture">
+                <p id="textoPresentacion">Hola, soy Milky aunque mi nombre real es Valentín. Soy un furro de nacionalidad argentina, me gustan mucho los videojuegos y estoy interesado en la programación. Soy estudiante de Informática y me gusta mucho aprender de manera autodidacta. Tengo 2 pasatiempos, los cuales son los siguientes: Jugar y dibujar.</p>
+            </div>
+        </section>
+        <hr>
+        <section id="gustos">
+            <h2 id="gustosTitulo">Mis gustos</h2>
+            <div id="furry">
+                <p id="gustosIntroduccion">Soy furro, por lo tanto me gusta mucho los animales antropomórficos. Entre todos ellos destaco los zorros (sobretodo el ártico), los dragones y el panda rojo. Cabe aclarar que yo no tengo un OC.</p>
+            </div>
+            <article>
+                <h3 id="juegosTitulo">Juegos favoritos</h3>
+                <p id="juegosTexto">Los juegos roguelikes/lites, metroidvanias y de exploración son los que más me gustan. Por un lado me gustan los desafíos y por el otro explorar el mundo que el juego tiene para ofrecer. A continuación pondré mis juegos favoritos:</p>
+                <div class="juegos-grid">
+                    <div class="juego-card" style="background-color: #FFD700; border: 3px solid #8f7900; box-shadow: 0 0 20px #FFD700;">
+                        <img src="img/RainWorld_icon.png" alt="Rain world">
+                        <p>Rain World</p>
+                    </div>
+                    <div class="juego-card" style="background-color: #adadad; border: 3px solid #797979; box-shadow: 0 0 20px #C0C0C0;">
+                        <img src="img/NineSols_icon.webp" alt="Nine Sols">
+                        <p>Nine Sols</p>
+                    </div>
+                    <div class="juego-card" style="background-color: #CD7F32; border: 3px solid #835220; box-shadow: 0 0 20px #CD7F32;">
+                        <img src="img/Ori_icon.png" alt="Ori">
+                        <p>Ori</p>
+                    </div>
+                    <div class="juego-card">
+                        <img src="img/HK_icon.png" alt="Hollow Knight">
+                        <p>Hollow Knight</p>
+                    </div>
+                    <div class="juego-card">
+                        <img src="img/TBOI_icon.ico" alt="TBOI" style="width: 75px;">
+                        <p>The Binding of Isaac: Rebirth</p>
+                    </div>
+                    <div class="juego-card">
+                        <img src="img/RoR2_icon.ico" alt="Risk of Rain 2" style="margin-top: 15px;">
+                        <p>Risk of Rain 2</p>
+                    </div>
+                    <div class="juego-card">
+                        <img src="img/DeadCells_icon.png" alt="Dead Cells">
+                        <p>Dead Cells</p>
+                    </div>
+                    <div class="juego-card">
+                        <img src="img/Terraria_icon.png" alt="Terraria">
+                        <p>Terraria</p>
+                    </div>
+                    <div class="juego-card">
+                        <img src="img/Celeste_icon.png" alt="Celeste">
+                        <p>Celeste</p>
+                    </div>
+                    <div class="juego-card">
+                        <img src="img/Ultrakill_icon.jpg" alt="Ultrakill">
+                        <p>Ultrakill</p>
+                    </div>
+                    <div class="juego-card">
+                        <img src="img/blasphemous_icon.jpg" alt="Blasphemous">
+                        <p>Blasphemous</p>
+                    </div>
+                    <div class="juego-card">
+                        <img src="img/DRG_icon.jpg" alt="Deep Rock Galactic">
+                        <p>Deep Rock Galactic</p>
+                    </div>
+                    <div class="juego-card">
+                        <img src="img/TF2_icon.png" alt="Team Fortress 2">
+                        <p>Team Fortress 2</p>
+                    </div>
+                    <div class="juego-card">
+                        <img src="img/Katana_Zero-icon.png" alt="Katana Zero">
+                        <p>Katana Zero</p>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <h3>Pokemon</h3>
+                <p id="pokemonTexto">Me gusta Pokemon. Aunque nunca vi la serie pero si jugué algunos de los juegos: Pokemon rojo fuego, esmeralda, X y ultra sol (éste último no lo terminé). Adicionalmente jugué un fanmade llamado Pokemon Reloaded. <br>Mi pokemon favorito es Umbreon, juego favorito es el esmeralda y generación favorita la tercera</p>
+            </article>
+            <article>
+                <h3 id="musicaTitulo">Música</h3>
+                <p id="musicaTexto">Mis gustos musicales son algo que no tengo muy en cuenta ya que son pocas las ocasiones en las que escucho musica. Pero me gustan mucho las bandas de power metal y rock alternativo, algunas de las cosas que suelo escuchar son:</p>
+                <ul>
+                    <li>Mago de Oz</li>
+                    <li>Rata Blanca</li>
+                    <li>Dragonfly</li>
+                    <li>Nightwish</li>
+                    <li>Falling in Reverse</li>
+                    <li>Rammstein</li>
+                </ul>
+                <p id="musicaTexto2">Aún así, a menudo suelo escuchar también el soudtrack de mis juegos favoritos. Destaco el OST de Rain world, Celeste y Ori.</p>
+            </article>
+        </section>
+        <hr>
+        <section id="Proyectos-personales">
+            <h2 id="proyectosTituloP">Proyectos personales</h2>
+            <h3 id="tituloDesarrollo">Desarrollo web</h3>
+            <p id="proyectosTexto">Descubrí que armar páginas web es divertido, y de momento estoy usando parte de mi tiempo en esto. Un ejemplo es ésta misma página que estas viendo, la he hecho yo. También hice otras páginas, algunas de ellas son:</p>
+            <ul>
+                <li><a href="https://lugiartic.github.io/FavoriteCharacters/" target="_blank" id="personajesFavoritos">Mis personajes favoritos</a></li>
+                <li><a href="https://lugiartic.github.io/RW-Enemies/" target="_blank" id="enemigosRW">Enemigos de Rain World</a></li>
+                <li><a href="https://lugiartic.github.io/Slugcats/" target="_blank">Slugcats</a></li>
+            </ul>
+            <p id="proyectosTexto2">Como desarrollador principiante, reconozco que se me hace dificil adaptar las páginas a dispositivos móviles, por lo tanto es posible que los sitios se vean raros en celulares.</p>
+            <h3 id="tituloDibujos">Dibujos</h3>
+            <p id="dibujoTexto">Ser dibujante es mi sueño frustrado, a pesar de esto hago el intento de dibujar. Actualmente me limito a slugcats. Aquí debajo anclaré una galería de arte en la cual expondré todos mis dibujos, y la iré actualizando activamente cada vez que termine un dibujo nuevo:</p>
+            <p style="font-size: 27px; font-weight: bold; font-style: italic; text-align: center;"><a href="galeria.html" target="_blank" id="galeria">>> Galería de arte <<</a></p> <!--Crear la galería y adjuntarla-->
+        </section>
+        <hr>
+        <section id="redes-sociales">
+            <h2 id="tituloRedes">Redes sociales</h2>
+            <p id="redesTexto">Puedes encontrarme en varios lugares:</p>
+            <ul id="redes">
+                <li>
+                    <a href="https://x.com/Milky_bat" target="_blank">
+                        <img src="img/twitter_logo.svg" alt="Twitter" class="icono">
+                        Twitter/X
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@MilkyTheBat" target="_blank">
+                        <img src="img/Youtube_logo.png" alt="Youtube" class="icono">
+                        Youtube
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/mk_valenc" target="_blank">
+                        <img src="img/Instagram_logo.png" alt="Instagram" class="icono">
+                        Intagram
+                    </a>
+                    </li>
+                <li>
+                    <img src="img/discord-logo.jpg" alt="Discord" class="icono">
+                    Discord: milkyriv
+                </li>
+            </ul>
+        </section>
+    </main>
+    <script src="idioma.js"></script>
+</body>
+</html>

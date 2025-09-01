@@ -18,7 +18,7 @@ function cambiarIdioma(idioma) {
         es: {
             tituloprincipal: "Pagina personal de Milky",
             tituloPresentacion: "Presentación",
-            textoPresentacion: "Hola, soy Milky aunque mi nombre real es Valentín. Soy un furro de nacionalidad argentina, me gustan mucho los videojuegos y estoy interesado en la programación. Soy estudiante de Informática y me gusta mucho aprender de manera autodidacta. Tengo 2 pasatiempos, los cuales son los siguientes: Jugar y dibujar.",
+            textoPresentacion: "Hola, soy Milky aunque mi nombre real es Valentín. Soy furro, me gustan mucho los videojuegos y estoy interesado en la programación. Soy estudiante de Informática y me gusta mucho aprender de manera autodidacta. Tengo 2 pasatiempos, los cuales son los siguientes: Jugar y dibujar.",
             gustosTitulo: "Mis gustos",
             gustosIntroduccion: "Soy furro, por lo tanto me gusta mucho los animales antropomórficos. Entre todos ellos destaco los zorros (sobretodo el ártico), los dragones y el panda rojo. Cabe aclarar que yo no tengo un OC.",
             juegosTitulo: "Juegos favoritos",
@@ -47,7 +47,7 @@ function cambiarIdioma(idioma) {
         en: {
             tituloprincipal: "Milky's personal page",
             tituloPresentacion: "Presentation",
-            textoPresentacion: "Hi, I'm Milky, although my real name is Valentín. I'm an Argentine furry. I really like video games and I'm interested in programming. I'm a computer science student and I really enjoy learning on my own. I have two hobbies, which are playing video games and drawing.",
+            textoPresentacion: "Hi, I'm Milky, although my real name is Valentín. I'm furry. I really like video games and I'm interested in programming. I'm a computer science student and I really enjoy learning on my own. I have two hobbies, which are playing video games and drawing.",
             gustosTitulo: "My preferences",
             gustosIntroduccion: "I am a furry, so I really like anthropomorphic animals. Among them, I especially like foxes (particularly arctic foxes) as well as dragons and red pandas. It should be noted that I do not have an original character.",
             juegosTitulo: "Favorite games",
@@ -107,4 +107,5 @@ function cambiarIdioma(idioma) {
         : '<img src="img/lenguaje/en_flag.png" alt="English" width="40px"> ▼';
 
      document.getElementById("menu-idioma").classList.add("oculto");
+
 }

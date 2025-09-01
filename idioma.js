@@ -20,7 +20,7 @@ function cambiarIdioma(idioma) {
             tituloPresentacion: "Presentación",
             textoPresentacion: "Hola, soy Milky aunque mi nombre real es Valentín. Soy furro, me gustan mucho los videojuegos y estoy interesado en la programación. Soy estudiante de Informática y me gusta mucho aprender de manera autodidacta. Tengo 2 pasatiempos, los cuales son los siguientes: Jugar y dibujar.",
             gustosTitulo: "Mis gustos",
-            gustosIntroduccion: "Soy furro, por lo tanto me gusta mucho los animales antropomórficos. Entre todos ellos destaco los zorros (sobretodo el ártico), los dragones y el panda rojo. Cabe aclarar que yo no tengo un OC.",
+            gustosIntroduccion: "Soy furry, por lo tanto me gusta mucho los animales antropomórficos. Entre todos ellos destaco los zorros (sobretodo el ártico), los dragones y el panda rojo. Cabe aclarar que yo no tengo un OC.",
             juegosTitulo: "Juegos favoritos",
             juegosTexto: "Los juegos roguelikes/lites, metroidvanias y de exploración son los que más me gustan. Por un lado me gustan los desafíos y por el otro explorar el mundo que el juego tiene para ofrecer. A continuación pondré mis juegos favoritos:",
             
@@ -109,3 +109,4 @@ function cambiarIdioma(idioma) {
      document.getElementById("menu-idioma").classList.add("oculto");
 
 }
+

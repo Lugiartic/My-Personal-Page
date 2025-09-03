@@ -16,6 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
 function cambiarIdioma(idioma) {
     const textos = {
         es: {
+            /*
+            Desde este comentario, arriba irán los titulos de dibujos que iré haciendo. Se colocarán uno encima del otro
+            conforme los vaya dibujando y publicando
+            */
             tituloGaleria: "Galería de arte de Milky",
             galeriaIntroduccion: 'En este lugar voy a publicar todos mis dibujos, desde el mas reciente hasta el mas antiguo. Toca cada tarjeta para ir a al tweet donde se ha publicado el dibujo, un "me gusta" ayuda mucho y me motiva a seguir incursionando este camino :) <br><br>ADVERTENCIA: Hay spoilers de Rain World!!!',
             d1: "Spearmaster agarrando lanzas",
@@ -55,6 +59,10 @@ function cambiarIdioma(idioma) {
         },
 
         en: {
+            /*
+            Desde este comentario, arriba irán traduciendo los titulos de dibujos que iré haciendo. Se colocarán uno
+            encima del otro conforme los vaya dibujando y publicando
+            */
             tituloGaleria:"Milky's art gallery",
             galeriaIntroduccion: 'Here I will post all my drawings, from the most recent to the oldest. Tap each card to go to the tweet where the drawing was posted. A “like” helps a lot and motivates me to continue on this path :) <br><br>WARNING: There are spoilers for Rain World!!!',
             d1: "Spearmaster grabbing spears",
@@ -95,6 +103,9 @@ function cambiarIdioma(idioma) {
         },
     } 
 
+    /*
+    Desde acá para arriba se reemplazarán los titulos de los nuevos dibujos, uno encima del otro conforme los publique
+    */
     document.getElementById("tituloGaleria").textContent = textos[idioma].tituloGaleria;
     document.getElementById("galeriaIntroduccion").innerHTML = textos[idioma].galeriaIntroduccion;
     document.getElementById("d1").textContent = textos[idioma].d1;
@@ -140,4 +151,5 @@ function cambiarIdioma(idioma) {
         : '<img src="img/lenguaje/en_flag.png" alt="English" width="40px"> ▼';
 
      document.getElementById("menu-idioma").classList.add("oculto");
+
 }
